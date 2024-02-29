@@ -3,6 +3,8 @@ import ProductContainer from "./component/ProductContainer";
 import Header from "./component/Header";
 import AddProduct from "./component/AddProduct";
 import EditedProduct from "./component/EditedProduct";
+import ProductManagement from "./component/ProductManagement";
+
 
 function App() {
   const [products, setProducts] = useState([])
@@ -19,6 +21,7 @@ function App() {
       < ProductContainer products={products} setProducts={setProducts}/>
       <AddProduct />
       <EditedProduct/>
+      <ProductManagement/>
     </div>
   );
 }

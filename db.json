@@ -119,28 +119,6 @@
       "productdesc": "PN#10/Lifeline/collar/white/XL",
       "price": 21,
       "inventory": 36
-    },
-    {
-      "name": "banana",
-      "image": "\"./assets/ramen/nirvana.jpg\"",
-      "neckDesign": "polo",
-      "color": "red",
-      "size": "xl",
-      "price": "25",
-      "productdesc": "long",
-      "inventory": 0,
-      "id": 11
-    },
-    {
-      "name": "Gina",
-      "image": "https://cdn.wallpapersafari.com/67/72/HxoFaP.jpg",
-      "neckDesign": "plain",
-      "color": "red",
-      "size": "per yard",
-      "price": "45",
-      "productdesc": "PN#12/Gina/red",
-      "inventory": 48,
-      "id": 12
     }
   ]
 }
