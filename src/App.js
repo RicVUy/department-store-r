@@ -1,24 +1,15 @@
 
-import './App.css';
-import ProductContainer from './components/ProductContainer';
-import AddProduct from './components/AddProduct';
-import EditedProduct from './components/EditedProduct';
-import ProductManagement from './components/ProductManagement';
-
+import ProductContainer from "./component/ProductContainer";
+import Header from "./component/Header";
 
 function App() {
+ 
 
-  
   return (
-    <div className="App">
-      <header className="App-header">
-        
-          <ProductContainer/>
-           <AddProduct/>
-           <EditedProduct/>
-           <ProductManagement/>
-      </header>
-        
+    <div>
+      <Header />
+      < ProductContainer />
+     
     </div>
   );
 }

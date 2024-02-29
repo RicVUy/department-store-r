@@ -1,21 +1,28 @@
 import React from 'react'
 
-function Product({product}) {
-  const {
-    id,
-    name,
-    image,
-    neckDesign,
-    color,
-    size,
-    price,
-    productdesc,
-    inventory} = product
+function Product({product, setCart, cart}) {
+    const {
+        id,
+        name,
+        image,
+        neckDesign,
+        color,
+        size,
+        price,
+        productdesc,
+        inventory} = product
 
-  
+        const addToCart = (product) => {
+            setCart([...cart, product]);
+          };
+
+      function handleAddToCart() {
+        addToCart(product)
+      }   
+
   return (
-    
-<div className='card' >
+    <div> 
+        <h3>Product</h3>
         <div className="card-body">
           <h4 className="card-title">{name}</h4>
           <img className="img" src={image} alt={name} />
@@ -25,10 +32,10 @@ function Product({product}) {
           <p className="card-text">{productdesc}</p>
           <p className="card-text">{price}</p>
           <p className="card-text">{inventory}</p>
-          <button onClick={() => addToCart(product)}>Add to Cart</button>
+          <button onClick={handleAddToCart}>Add to Cart</button>
     </div>
+
     </div>
-    
   )
 }
 
