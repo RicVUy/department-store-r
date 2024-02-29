@@ -82,7 +82,7 @@
       "size": "small",
       "productdesc": "PN#07/Lifeline/collar/white/S",
       "price": 18.5,
-      "inventory": 76
+      "inventory": 73
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@
       "size": "medium",
       "productdesc": "PN#08/Lifeline/collar/white/M",
       "price": 19.5,
-      "inventory": 24
+      "inventory": 23
     },
     {
       "id": 9,
@@ -130,6 +130,17 @@
       "productdesc": "long",
       "inventory": 0,
       "id": 11
+    },
+    {
+      "name": "Gina",
+      "image": "https://cdn.wallpapersafari.com/67/72/HxoFaP.jpg",
+      "neckDesign": "plain",
+      "color": "red",
+      "size": "per yard",
+      "price": "45",
+      "productdesc": "PN#12/Gina/red",
+      "inventory": 48,
+      "id": 12
     }
   ]
 }
