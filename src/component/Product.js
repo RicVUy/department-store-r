@@ -17,7 +17,7 @@ function Product({product, setCart, cart, onUpdateInventory}) {
     const addToCart = (product) => {
         if (product.inventory > 0) {
           setCart([...cart, product]);
-          onUpdateInventory(product.id);
+          onUpdateInventory(product.id, product.Inventory - 1);
         } else {
           alert('Product out of stock');
         }

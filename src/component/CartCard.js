@@ -1,11 +1,24 @@
 import React from 'react'
 
-function CartCard({cart}) {
+function CartCard({cart, onUpdateInventoryRem, setCart}) {
    
     const calculateTotalPrice = () => {
         return cart.reduce((total, product) => total + product.price, 0);
       };
-   
+
+      
+        const removeFromCart = (productId) => {
+          const updatedCart = cart.filter((product) => product.id !== productId);
+          const removedProduct = cart.find((product) => product.id === productId);
+        
+          setCart(updatedCart);
+        
+          // If the removed product is found, update its inventory in the db.json file
+          if (removedProduct) {
+            onUpdateInventoryRem(productId, removedProduct.inventory + 1);
+          }
+        };
+
   return (
     <div>
          <div className='cart'>
@@ -15,6 +28,7 @@ function CartCard({cart}) {
               {cart.map((product) => (
                 <li key={product.id}>
                   {product.productdesc} - ${product.price}
+                  <button onClick={() => removeFromCart(product.id)}>Remove from Cart</button>
                 </li>
              ))}
              
