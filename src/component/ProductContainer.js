@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import ProductCard from './ProductCard';
+import CartCard from './CartCard';
+
 function ProductContainer() {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
@@ -10,21 +12,13 @@ function ProductContainer() {
           .then(setProducts) 
     }, []);
   
-     
+   
   
     return (
       <div>
+        <CartCard cart={cart}/>
         <ProductCard products={products} setCart={setCart} cart={cart}/>
-        <div>
-          <h2>Cart</h2>
-          <ul>
-            {cart.map((product) => (
-              <li key={product.id}>
-                {product.name} - ${product.price}
-              </li>
-            ))}
-          </ul>
-        </div>
+       
       </div>
     );
   }
