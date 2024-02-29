@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Product({product, setCart, cart}) {
+function Product({product, setCart, cart, onUpdateInventory}) {
     const {
         id,
         name,
@@ -12,9 +12,17 @@ function Product({product, setCart, cart}) {
         productdesc,
         inventory} = product
 
-        const addToCart = (product) => {
-            setCart([...cart, product]);
-          };
+       
+
+    const addToCart = (product) => {
+        if (product.inventory > 0) {
+          setCart([...cart, product]);
+          onUpdateInventory(product.id);
+        } else {
+          alert('Product out of stock');
+        }
+      };
+
 
       function handleAddToCart() {
         addToCart(product)
@@ -31,7 +39,7 @@ function Product({product, setCart, cart}) {
           <p className="card-text">{size}</p>
           <p className="card-text">{productdesc}</p>
           <p className="card-text">{price}</p>
-          <p className="card-text">{inventory}</p>
+          <p className="card-text">Inventory: {inventory}</p>
           <button onClick={handleAddToCart}>Add to Cart</button>
     </div>
 

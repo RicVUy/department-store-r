@@ -1,135 +1,135 @@
 {
-    "Products": [
-      {
-        "id": 1,
-        "category": "Tshirt",
-        "name": "Yalex",
-        "image": "https://images.rawpixel.com/image_png_300/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8zNF9mdWxsX2JvZHlfM2RfYXZhdGFyXzNkX3JlbmRlcl9vZl9hX2J1c2luZXNzd19jOWYzODYxYy1lZTYzLTQxOGYtOThmNC02MWJkNGM3OGE1YTZfMS5wbmc.png",
-        "neckDesign": "roundneck",
-        "color": "white",
-        "size": "small",
-        "productdesc": "PN#01/Yalex/rn/white/S",
-        "price": 10.5,
-        "inventory": 17
-      },
-      {
-        "id": 2,
-        "category": "Tshirt",
-        "name": "Yalex",
-        "image": "https://www.shopify.com/stock-photos/photos/urban-mens-fashion?c=man",
-        "neckDesign": "roundneck",
-        "color": "white",
-        "size": "medium",
-        "productdesc": "PN#02/Yalex/rn/white/M",
-        "price": 11.5,
-        "inventory": 42
-      },
-      {
-        "id": 3,
-        "category": "Tshirt",
-        "name": "Yalex",
-        "image": "https://www.shopify.com/stock-photos/photos/dark-haired-man-in-brown-leather-jacket?c=man",
-        "neckDesign": "roundneck",
-        "color": "white",
-        "size": "large",
-        "productdesc": "PN#03/Yalex/rn/white/L",
-        "price": 12.5,
-        "inventory": "25"
-      },
-      {
-        "id": 4,
-        "category": "Polo",
-        "name": "Blucorner",
-        "image": "https://www.shopify.com/stock-photos/photos/young-man-stood-in-front-of-light?c=man",
-        "neckDesign": "Vneck",
-        "color": "black",
-        "size": "small",
-        "productdesc": "PN#04/Blucorner/rn/black/S",
-        "price": 12.75,
-        "inventory": 82
-      },
-      {
-        "id": 5,
-        "category": "Polo",
-        "name": "Blucorner",
-        "image": "https://www.shopify.com/stock-photos/photos/classy-tuxedo-fashion?c=man",
-        "neckDesign": "Vneck",
-        "color": "black",
-        "size": "medium",
-        "productdesc": "PN#05/Blucorner/rn/black/M",
-        "price": 13.5,
-        "inventory": "128"
-      },
-      {
-        "id": 6,
-        "category": "Polo",
-        "name": "Blucorner",
-        "image": "https://www.shopify.com/stock-photos/photos/young-man-stood-in-front-of-light?c=man",
-        "neckDesign": "Vneck",
-        "color": "black",
-        "size": "large",
-        "productdesc": "PN#06/Blucorner/rn/black/L",
-        "price": 14.5,
-        "inventory": 32
-      },
-      {
-        "id": 7,
-        "category": "Polo",
-        "name": "Lifeline",
-        "image": "https://www.shopify.com/stock-photos/photos/young-man-stood-in-front-of-light?c=man",
-        "neckDesign": "withCollar",
-        "color": "white",
-        "size": "small",
-        "productdesc": "PN#07/Lifeline/collar/white/S",
-        "price": 18.5,
-        "inventory": 77
-      },
-      {
-        "id": 8,
-        "category": "formal",
-        "name": "Lifeline",
-        "image": "./images/aloe.jpg",
-        "neckDesign": "withCollar",
-        "color": "white",
-        "size": "medium",
-        "productdesc": "PN#08/Lifeline/collar/white/M",
-        "price": 19.5,
-        "inventory": 24
-      },
-      {
-        "id": 9,
-        "category": "formal",
-        "name": "Lifeline",
-        "image": "https://www.shopify.com/stock-photos/photos/young-man-stood-in-front-of-light?c=man",
-        "neckDesign": "withCollar",
-        "color": "white",
-        "size": "large",
-        "productdesc": "PN#09/Lifeline/collar/white/L",
-        "price": 20,
-        "inventory": 28
-      },
-      {
-        "id": 10,
-        "category": "formal",
-        "name": "Lifeline",
-        "image": "https://www.shopify.com/stock-photos/photos/mens-button-up-shirt-urban-fashion?c=man",
-        "neckDesign": "withCollar",
-        "color": "white",
-        "size": "extralarge",
-        "productdesc": "PN#10/Lifeline/collar/white/XL",
-        "price": 21,
-        "inventory": 37
-      },
-      {
-        "name": "banana",
-        "image": "\"./assets/ramen/nirvana.jpg\"",
-        "neckDesign": "polo",
-        "color": "red",
-        "size": "xl",
-        "price": "25",
-        "productdesc": "long",
-        "inventory": 0,
-        "id": 11
-      }
-    ]
-  }
+  "Products": [
+    {
+      "id": 1,
+      "category": "Tshirt",
+      "name": "Yalex",
+      "image": "https://images.rawpixel.com/image_png_300/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8zNF9mdWxsX2JvZHlfM2RfYXZhdGFyXzNkX3JlbmRlcl9vZl9hX2J1c2luZXNzd19jOWYzODYxYy1lZTYzLTQxOGYtOThmNC02MWJkNGM3OGE1YTZfMS5wbmc.png",
+      "neckDesign": "roundneck",
+      "color": "white",
+      "size": "small",
+      "productdesc": "PN#01/Yalex/rn/white/S",
+      "price": 10.5,
+      "inventory": 16
+    },
+    {
+      "id": 2,
+      "category": "Tshirt",
+      "name": "Yalex",
+      "image": "https://www.shopify.com/stock-photos/photos/urban-mens-fashion?c=man",
+      "neckDesign": "roundneck",
+      "color": "white",
+      "size": "medium",
+      "productdesc": "PN#02/Yalex/rn/white/M",
+      "price": 11.5,
+      "inventory": 41
+    },
+    {
+      "id": 3,
+      "category": "Tshirt",
+      "name": "Yalex",
+      "image": "https://www.shopify.com/stock-photos/photos/dark-haired-man-in-brown-leather-jacket?c=man",
+      "neckDesign": "roundneck",
+      "color": "white",
+      "size": "large",
+      "productdesc": "PN#03/Yalex/rn/white/L",
+      "price": 12.5,
+      "inventory": 23
+    },
+    {
+      "id": 4,
+      "category": "Polo",
+      "name": "Blucorner",
+      "image": "https://www.shopify.com/stock-photos/photos/young-man-stood-in-front-of-light?c=man",
+      "neckDesign": "Vneck",
+      "color": "black",
+      "size": "small",
+      "productdesc": "PN#04/Blucorner/rn/black/S",
+      "price": 12.75,
+      "inventory": 82
+    },
+    {
+      "id": 5,
+      "category": "Polo",
+      "name": "Blucorner",
+      "image": "https://www.shopify.com/stock-photos/photos/classy-tuxedo-fashion?c=man",
+      "neckDesign": "Vneck",
+      "color": "black",
+      "size": "medium",
+      "productdesc": "PN#05/Blucorner/rn/black/M",
+      "price": 13.5,
+      "inventory": "128"
+    },
+    {
+      "id": 6,
+      "category": "Polo",
+      "name": "Blucorner",
+      "image": "https://www.shopify.com/stock-photos/photos/young-man-stood-in-front-of-light?c=man",
+      "neckDesign": "Vneck",
+      "color": "black",
+      "size": "large",
+      "productdesc": "PN#06/Blucorner/rn/black/L",
+      "price": 14.5,
+      "inventory": 31
+    },
+    {
+      "id": 7,
+      "category": "Polo",
+      "name": "Lifeline",
+      "image": "https://www.shopify.com/stock-photos/photos/young-man-stood-in-front-of-light?c=man",
+      "neckDesign": "withCollar",
+      "color": "white",
+      "size": "small",
+      "productdesc": "PN#07/Lifeline/collar/white/S",
+      "price": 18.5,
+      "inventory": 77
+    },
+    {
+      "id": 8,
+      "category": "formal",
+      "name": "Lifeline",
+      "image": "./images/aloe.jpg",
+      "neckDesign": "withCollar",
+      "color": "white",
+      "size": "medium",
+      "productdesc": "PN#08/Lifeline/collar/white/M",
+      "price": 19.5,
+      "inventory": 24
+    },
+    {
+      "id": 9,
+      "category": "formal",
+      "name": "Lifeline",
+      "image": "https://www.shopify.com/stock-photos/photos/young-man-stood-in-front-of-light?c=man",
+      "neckDesign": "withCollar",
+      "color": "white",
+      "size": "large",
+      "productdesc": "PN#09/Lifeline/collar/white/L",
+      "price": 20,
+      "inventory": 28
+    },
+    {
+      "id": 10,
+      "category": "formal",
+      "name": "Lifeline",
+      "image": "https://www.shopify.com/stock-photos/photos/mens-button-up-shirt-urban-fashion?c=man",
+      "neckDesign": "withCollar",
+      "color": "white",
+      "size": "extralarge",
+      "productdesc": "PN#10/Lifeline/collar/white/XL",
+      "price": 21,
+      "inventory": 37
+    },
+    {
+      "name": "banana",
+      "image": "\"./assets/ramen/nirvana.jpg\"",
+      "neckDesign": "polo",
+      "color": "red",
+      "size": "xl",
+      "price": "25",
+      "productdesc": "long",
+      "inventory": 0,
+      "id": 11
+    }
+  ]
+}
