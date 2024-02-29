@@ -18,10 +18,10 @@
       "name": "Yalex",
       "image": "https://www.shopify.com/stock-photos/photos/urban-mens-fashion?c=man",
       "neckDesign": "roundneck",
-      "color": "white",
+      "color": "black",
       "size": "medium",
       "productdesc": "PN#02/Yalex/rn/white/M",
-      "price": 11.5,
+      "price": "11.75",
       "inventory": 42
     },
     {

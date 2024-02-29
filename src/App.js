@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import ProductContainer from "./component/ProductContainer";
 import Header from "./component/Header";
 import AddProduct from "./component/AddProduct";
-
+import EditedProduct from "./component/EditedProduct";
 
 function App() {
   const [products, setProducts] = useState([])
@@ -18,6 +18,7 @@ function App() {
       <Header />
       < ProductContainer products={products} setProducts={setProducts}/>
       <AddProduct />
+      <EditedProduct/>
     </div>
   );
 }
