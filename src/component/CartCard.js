@@ -3,7 +3,7 @@ import React from 'react'
 function CartCard({cart, onUpdateInventoryRem, setCart}) {
    
     const calculateTotalPrice = () => {
-        return cart.reduce((total, product) => total + product.price, 0);
+        return cart.reduce((total, product) => total + parseFloat(product.price), 0);
       };
 
       

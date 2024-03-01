@@ -10,7 +10,7 @@
       "size": "small",
       "productdesc": "PN#01/Yalex/rn/white/S",
       "price": 10.5,
-      "inventory": 15
+      "inventory": 14
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "size": "medium",
       "productdesc": "PN#02/Yalex/rn/white/M",
       "price": "11.75",
-      "inventory": 42
+      "inventory": 40
     },
     {
       "id": 3,
@@ -46,7 +46,7 @@
       "size": "small",
       "productdesc": "PN#04/Blucorner/rn/black/S",
       "price": 12.75,
-      "inventory": 83
+      "inventory": 80
     },
     {
       "id": 5,
@@ -70,7 +70,7 @@
       "size": "large",
       "productdesc": "PN#06/Blucorner/rn/black/L",
       "price": 14.5,
-      "inventory": 34
+      "inventory": 33
     },
     {
       "id": 7,
@@ -94,7 +94,7 @@
       "size": "medium",
       "productdesc": "PN#08/Lifeline/collar/white/M",
       "price": 19.5,
-      "inventory": 23
+      "inventory": 22
     },
     {
       "id": 9,
@@ -119,6 +119,17 @@
       "productdesc": "PN#10/Lifeline/collar/white/XL",
       "price": 21,
       "inventory": 36
+    },
+    {
+      "name": "banana",
+      "image": "https://cdn.wallpapersafari.com/67/72/HxoFaP.jpg",
+      "neckDesign": "rtw",
+      "color": "red",
+      "size": "s",
+      "price": "120",
+      "productdesc": "nice",
+      "inventory": 99,
+      "id": 11
     }
   ]
 }

@@ -33,7 +33,7 @@ const ProductManagement = () => {
         alert('Failed to delete the product');
       });
   };
-  const restock = { restock: true}
+  /*const restock = { restock: true}
   const sufficient = { restock: false}
   const result = Map.groupBy(products, ({inventory}) => 
   inventory  <30 ? restock : sufficient, )
@@ -48,7 +48,7 @@ const ProductManagement = () => {
   
    const resupply1 = result1.get(restock).map((stock) => {
     return stock.productdesc
-   })
+   })*/
 
    const filteredProducts = products.filter(stock => {
     if (filterBy === "All") {
@@ -61,7 +61,7 @@ const ProductManagement = () => {
     <div className='prod'>
       
       <h2>Product Management</h2>
-      <div className='resupply'>
+     {/*} <div className='resupply'>
         <h3>Inventory</h3>
       <h4>Products below 30 in stock:</h4>
       <ul>
@@ -76,7 +76,7 @@ const ProductManagement = () => {
           <li> {p}</li> 
         ))}
            </ul>
-        </div>
+        </div>*/}
            <div className='resupply'>
            <h2>Delete Items</h2>
            <SearchBar 

@@ -4,9 +4,9 @@ import Header from "./component/Header";
 import AddProduct from "./component/AddProduct";
 import EditedProduct from "./component/EditedProduct";
 import ProductManagement from "./component/ProductManagement";
-
-
-function App() {
+import NavBar from "./component/NavBar";
+import { Route, Switch} from "react-router-dom";
+/*function App() {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
@@ -24,7 +24,40 @@ function App() {
       <ProductManagement/>
     </div>
   );
+}*/
+function App() {
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    fetch(" http://localhost:3001/products")
+        .then(r => r.json())
+        .then(setProducts) 
+  }, []);
+
+  return (
+    <div>
+      <NavBar />
+      <Switch>
+      <Route path="/ProductContainer">
+      < ProductContainer products={products} setProducts={setProducts}/>
+      </Route>
+      <Route path="/AddProduct">
+      <AddProduct />
+      </Route>
+      <Route path="/EditedProduct">
+      <EditedProduct/>
+      </Route>
+      <Route path="/ProductManagement">
+      <ProductManagement/>
+      </Route>
+      <Route exact path="/">
+      <Header />
+      </Route>
+      </Switch>
+    </div>
+  );
 }
+
 
 export default App;
 
