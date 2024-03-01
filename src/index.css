@@ -30,6 +30,75 @@ code {
   padding: 0.5rem;
   background-color: rgb(100, 237, 184);
 }
+.delete {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgb(224, 209, 222);
+}
+.resupply {
+  background-color: lightgrey;
+  width: 200px;
+  border: 10px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+.prod {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgba(237, 100, 207, 0.555);
+}
+
+.sort {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgba(237, 228, 100, 0.158);
+}
+
+.card1{
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgba(30, 51, 65, 0.158)
+}
+button {
+  background-color: #04AA6D;
+  border: none;
+  color: red;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 1px .5px;
+  cursor: pointer;
+}
+.butt {
+  background-color: #aa8304;
+  border: none;
+  color: rgba(37, 46, 83, 0.39);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 p {
   color:darkorchid;
 }
@@ -40,15 +109,5 @@ h3 {
   color:chocolate
 }
 h1 {
-  color:rgb(100, 237, 184)
-}
-.card1 {
-  margin: 1rem;
-  width:50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
-  background-color: cornflowerblue;
+  color:rgb(100, 125, 237)
 }

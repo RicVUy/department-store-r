@@ -1,10 +1,12 @@
 import React, {useState} from 'react'
 import ProductCard from './ProductCard';
 import CartCard from './CartCard';
-
+import SearchBar from './SearchBar';
 function ProductContainer({products, setProducts}) {
     //const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+    const [sortBy, setSortBy] = useState("Alphabetically")
+  const [filterBy, setFilterBy] = useState("All")
   
     
 
@@ -50,11 +52,31 @@ body: JSON.stringify({ inventory: updatedProductsRem.find((p) => p.id === produc
 setProducts(updatedProductsRem);
 
 }
+const sortedProducts = [...products].sort((stockA, stockB) => {
+  if (sortBy === "Alphabetically") {
+    return stockA.name.localeCompare(stockB.name)
+  } else {
+    return stockA.price - stockB.price
+  }
+})
+const filteredProducts = sortedProducts.filter(stock => {
+  if (filterBy === "All") {
+    return true
+  } else {
+    return stock.category === filterBy
+  }
+})
 
     return (
       <div>
-        <CartCard cart={cart} onUpdateInventoryRem={updateInventoryRem} setCart={setCart}/>
-        <ProductCard products={products} setCart={setCart} cart={cart} onUpdateInventory={updateInventory}/>
+       <CartCard cart={cart} onUpdateInventoryRem={updateInventoryRem} setCart={setCart}/>
+       <SearchBar 
+      sortBy={sortBy} 
+      setSortBy={setSortBy} 
+      filterBy={filterBy} 
+      setFilterBy={setFilterBy}/>
+      
+        <ProductCard products={filteredProducts} setCart={setCart} cart={cart} onUpdateInventory={updateInventory}/>
        
       </div>
     );

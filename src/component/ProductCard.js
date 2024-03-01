@@ -19,7 +19,9 @@ function ProductCard({products, setCart, cart, onUpdateInventory}) {
     <div>
       <div>
       <input
+          className="butt"
           type="text"
+         
           placeholder="Search by name..."
           value={searchTerm}
           onChange={handleSearch}
