@@ -3,27 +3,19 @@ import ProductCard from './ProductCard';
 import CartCard from './CartCard';
 import SearchBar from './SearchBar';
 function ProductContainer({products, setProducts}) {
-    //const [products, setProducts] = useState([]);
+   
     const [cart, setCart] = useState([]);
     const [sortBy, setSortBy] = useState("Alphabetically")
-  const [filterBy, setFilterBy] = useState("All")
-  
-    
-
-    /*useEffect(() => {
-      fetch(" http://localhost:4001/products")
-          .then(r => r.json())
-          .then(setProducts) 
-    }, []);*/
-  
-    const updateInventory = async (productId) => {
+  const [filterBy, setFilterBy] = useState("")
+   
+  const updateInventory = async (productId) => {
         const updatedProducts = products.map((product) =>
           product.id === productId
             ? { ...product, inventory: product.inventory - 1 }
             : product
         );
          // Update the inventory on the server
-await fetch(`http://localhost:4001/products/${productId}`, {
+await fetch(`http://localhost:3001/products/${productId}`, {
     method: 'PATCH',
     headers: {
       'Content-Type': 'application/json',
@@ -41,7 +33,7 @@ const updateInventoryRem = async (productId) => {
     : product
 );
  // Update the inventory on the server
-await fetch(`http://localhost:4001/products/${productId}`, {
+await fetch(`http://localhost:3001/products/${productId}`, {
 method: 'PATCH',
 headers: {
 'Content-Type': 'application/json',

@@ -5,7 +5,7 @@ const DeleteProduct = ({ productId, onDeleteProduct }) => {
   const handleDeleteProduct = async () => {
     // Make a fetch DELETE request to delete the product
     try {
-      const response = await fetch(`http://localhost:4001/products/${productId}`, {
+      const response = await fetch(`http://localhost:3001/products/${productId}`, {
         method: 'DELETE',
       });
 

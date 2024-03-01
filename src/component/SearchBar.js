@@ -26,9 +26,9 @@ function SearchBar({sortBy, setSortBy, filterBy, setFilterBy}) {
       </label>
       <br />
       <label>
-        <strong>Filter:</strong>
+        <strong>Click to choose category:</strong>
         <select onChange={e => setFilterBy(e.target.value)} value={filterBy}>
-        <option value="All">All Products</option>
+        <option value="All">Choose Category</option>
           <option value="Tshirt">Tshirt</option>
           <option value="Polo">Polo</option>
           <option value="formal">formal</option>

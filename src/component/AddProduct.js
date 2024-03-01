@@ -29,7 +29,7 @@ function AddProduct ({ onAddProduct })  {
     }
  // Make a fetch POST request to add the new product
  try {
-  const response = await fetch('http://localhost:4001/products', {
+  const response = await fetch('http://localhost:3001/products', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

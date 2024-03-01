@@ -11,7 +11,7 @@ function EditedProduct() {
     e.preventDefault();
 
     // Fetch employee data based on the entered ID
-    fetch(`http://localhost:4001/Products/${productId}`)
+    fetch(`http://localhost:3001/Products/${productId}`)
       .then((resp) => {
         if (resp.status === 404) {
           throw new Error('Product not found');
@@ -29,7 +29,7 @@ function EditedProduct() {
 
   const handleUpdateProduct = (updatedData) => {
     // Send a PATCH request to update the employee using updatedData
-    fetch(`http://localhost:4001/Products/${productId}`, {
+    fetch(`http://localhost:3001/Products/${productId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
