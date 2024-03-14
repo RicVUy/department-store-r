@@ -6,6 +6,8 @@ const ProductManagement = () => {
   const [products, setProducts] = useState([]);
   const [sortBy, setSortBy] = useState("Alphabetically")
   const [filterBy, setFilterBy] = useState("")
+ // const [showArray, setShowArray] = useState(false);
+
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch('http://localhost:3001/products');
@@ -33,7 +35,7 @@ const ProductManagement = () => {
         alert('Failed to delete the product');
       });
   };
-  /*const restock = { restock: true}
+ /* const restock = { restock: true}
   const sufficient = { restock: false}
   const result = Map.groupBy(products, ({inventory}) => 
   inventory  <30 ? restock : sufficient, )
@@ -57,6 +59,10 @@ const ProductManagement = () => {
       return stock.category === filterBy
     }
   })
+
+/*const handleButtonClick = () => {
+    setShowArray(true);
+  };*/
   return (
     <div className='prod'>
       
@@ -64,13 +70,14 @@ const ProductManagement = () => {
      {/*} <div className='resupply'>
         <h3>Inventory</h3>
       <h4>Products below 30 in stock:</h4>
+
+      
       <ul>
         {resupply.map((p) => (
           <li> {p}</li> 
         ))}
-          
-        </ul>
-        <h4>Products below 10 in stock:</h4>
+          </ul>
+     <h4>Products below 10 in stock:</h4>
       <ul>
         {resupply1.map((p) => (
           <li> {p}</li> 
@@ -100,3 +107,15 @@ const ProductManagement = () => {
 };
 
 export default ProductManagement;
+
+
+ {/*  <div>
+      <button onClick={handleButtonClick}>Show Array</button>
+      {showArray && (
+        <ul>
+        {resupply.map((p, index) => (
+          <li key={index}> {p}</li> 
+        ))}
+           </ul>
+      )}
+        </div>*/}

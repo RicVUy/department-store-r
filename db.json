@@ -10,7 +10,7 @@
       "size": "small",
       "productdesc": "PN#01/Yalex/rn/white/S",
       "price": 10.5,
-      "inventory": 14
+      "inventory": 11
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "size": "medium",
       "productdesc": "PN#02/Yalex/rn/white/M",
       "price": "11.75",
-      "inventory": 40
+      "inventory": 38
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "size": "large",
       "productdesc": "PN#03/Yalex/rn/white/L",
       "price": 12.5,
-      "inventory": 250
+      "inventory": 248
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@
       "size": "small",
       "productdesc": "PN#04/Blucorner/rn/black/S",
       "price": 12.75,
-      "inventory": 80
+      "inventory": 71
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@
       "size": "medium",
       "productdesc": "PN#05/Blucorner/rn/black/M",
       "price": 13.5,
-      "inventory": 7
+      "inventory": 5
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@
       "size": "large",
       "productdesc": "PN#06/Blucorner/rn/black/L",
       "price": 14.5,
-      "inventory": 33
+      "inventory": 2999
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@
       "size": "small",
       "productdesc": "PN#07/Lifeline/collar/white/S",
       "price": 18.5,
-      "inventory": 72
+      "inventory": 71
     },
     {
       "id": 8,
@@ -122,13 +122,13 @@
     },
     {
       "name": "banana",
-      "image": "https://cdn.wallpapersafari.com/67/72/HxoFaP.jpg",
-      "neckDesign": "rtw",
-      "color": "red",
-      "size": "s",
-      "price": "120",
-      "productdesc": "nice",
-      "inventory": 99,
+      "image": "https://raw.githubusercontent.com/learn-co-curriculum/react-hooks-hogwild/master/public/images/piglet.jpg",
+      "neckDesign": "round",
+      "color": "pink",
+      "size": "m",
+      "price": "234",
+      "productdesc": "smooth",
+      "inventory": 24,
       "id": 11
     }
   ]

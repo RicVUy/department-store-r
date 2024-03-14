@@ -7,10 +7,11 @@ function CartCard({cart, onUpdateInventoryRem, setCart}) {
       };
 
       
-        const removeFromCart = (productId) => {
-          const updatedCart = cart.filter((product) => product.id !== productId);
-          const removedProduct = cart.find((product) => product.id === productId);
+        const removeFromCart = ( productId) => {
+          const updatedCart = cart.filter((product) => product.id !== productId );
+          const removedProduct = cart.find((product) => product.id === productId );
         
+         
           setCart(updatedCart);
         
           // If the removed product is found, update its inventory in the db.json file
@@ -25,8 +26,8 @@ function CartCard({cart, onUpdateInventoryRem, setCart}) {
             
             <h2>Products in Cart</h2>
             <ul>
-              {cart.map((product) => (
-                <li key={product.id}>
+              {cart.map((product, index) => (
+                <li key={index}>
                   {product.productdesc} - ${product.price}
                   <button onClick={() => removeFromCart(product.id)}>Remove from Cart</button>
                 </li>

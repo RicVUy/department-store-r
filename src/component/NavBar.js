@@ -34,6 +34,17 @@ function NavBar() {
       >
         Welcome Customers!
       </NavLink>
+
+      <NavLink
+        to="/AdminLogin"
+        exact
+        style={linkStyles}
+        activeStyle={{
+          background: "darkblue",
+        }}
+      >
+        Administrator Login
+      </NavLink>
       <NavLink
         to="/AddProduct"
         exact
@@ -64,7 +75,16 @@ function NavBar() {
       >
         ProductManagement
       </NavLink>
-
+      {/*<NavLink
+        to="ResupplyProduct"
+        exact
+        style={linkStyles}
+        activeStyle={{
+          background: "darkblue",
+        }}
+      >
+        ResupplyProduct
+      </NavLink>*/}
       
   </div>
   )

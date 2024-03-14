@@ -5,31 +5,15 @@ import AddProduct from "./component/AddProduct";
 import EditedProduct from "./component/EditedProduct";
 import ProductManagement from "./component/ProductManagement";
 import NavBar from "./component/NavBar";
-import { Route, Switch} from "react-router-dom";
-/*function App() {
-  const [products, setProducts] = useState([])
-
-  useEffect(() => {
-    fetch(" http://localhost:3001/products")
-        .then(r => r.json())
-        .then(setProducts) 
-  }, []);
-
-  return (
-    <div>
-      <Header />
-      < ProductContainer products={products} setProducts={setProducts}/>
-      <AddProduct />
-      <EditedProduct/>
-      <ProductManagement/>
-    </div>
-  );
-}*/
+import {Route, Switch} from "react-router-dom";
+import AdminLogIn from "./component/AdminLogIn";
+import ResupplyProduct from "./component/ResupplyProduct";
 function App() {
   const [products, setProducts] = useState([])
+  const [isLoggedIn, setLoggedIn] = useState(false);
 
   useEffect(() => {
-    fetch(" http://localhost:3001/products")
+    fetch("http://localhost:3001/Products")
         .then(r => r.json())
         .then(setProducts) 
   }, []);
@@ -41,14 +25,22 @@ function App() {
       <Route path="/ProductContainer">
       < ProductContainer products={products} setProducts={setProducts}/>
       </Route>
+     <Route path="/AdminLogin">
+        <AdminLogIn isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />
+    </Route>
       <Route path="/AddProduct">
-      <AddProduct />
+       <AddProduct /> 
+      
       </Route>
       <Route path="/EditedProduct">
-      <EditedProduct/>
+       <EditedProduct/> : 
+      
       </Route>
       <Route path="/ProductManagement">
-      <ProductManagement/>
+      <ProductManagement/> 
+      </Route>
+      <Route path="/ResupplyProduct">
+      <ResupplyProduct/> 
       </Route>
       <Route exact path="/">
       <Header />
