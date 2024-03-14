@@ -27,7 +27,7 @@ function ProductCard({products, setCart, cart, onUpdateInventory}) {
           onChange={handleSearch}
         />
       </div>
-    <div>
+    <div className='card-container'>
         {productList}
     </div>
     </div>
