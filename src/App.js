@@ -7,7 +7,7 @@ import ProductManagement from "./component/ProductManagement";
 import NavBar from "./component/NavBar";
 import {Route, Switch} from "react-router-dom";
 import AdminLogIn from "./component/AdminLogIn";
-import ResupplyProduct from "./component/ResupplyProduct";
+//import LowInventoryProducts from "./component/LowInventoryProducts";
 function App() {
   const [products, setProducts] = useState([])
   const [isLoggedIn, setLoggedIn] = useState(false);
@@ -39,9 +39,8 @@ function App() {
       <Route path="/ProductManagement">
       <ProductManagement/> 
       </Route>
-      <Route path="/ResupplyProduct">
-      <ResupplyProduct/> 
-      </Route>
+      
+      
       <Route exact path="/">
       <Header />
       </Route>
@@ -50,6 +49,11 @@ function App() {
   );
 }
 
+/*
+<Route path="/ResupplyProduct">
+      <ResupplyProduct products={products} setProducts={setProducts}/> 
+      </Route>
+*/
 
 export default App;
 

@@ -66,7 +66,7 @@ function NavBar() {
         Edit Product
       </NavLink>
       <NavLink
-        to="ProductManagement"
+        to="/ProductManagement"
         exact
         style={linkStyles}
         activeStyle={{
@@ -75,16 +75,16 @@ function NavBar() {
       >
         ProductManagement
       </NavLink>
-      {/*<NavLink
-        to="ResupplyProduct"
+      <NavLink
+        to="/lowInventoryProducts"
         exact
         style={linkStyles}
         activeStyle={{
           background: "darkblue",
         }}
       >
-        ResupplyProduct
-      </NavLink>*/}
+        Low Inventory Products
+      </NavLink>
       
   </div>
   )

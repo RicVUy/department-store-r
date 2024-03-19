@@ -61,14 +61,16 @@ const filteredProducts = sortedProducts.filter(stock => {
 
     return (
       <div>
-       <CartCard cart={cart} onUpdateInventoryRem={updateInventoryRem} setCart={setCart}/>
+       <CartCard cart={cart} onUpdateInventoryRem={updateInventoryRem} 
+       setCart={setCart}/>
        <SearchBar 
       sortBy={sortBy} 
       setSortBy={setSortBy} 
       filterBy={filterBy} 
       setFilterBy={setFilterBy}/>
       
-        <ProductCard products={filteredProducts} setCart={setCart} cart={cart} onUpdateInventory={updateInventory}/>
+        <ProductCard products={filteredProducts} setCart={setCart} 
+        cart={cart} onUpdateInventory={updateInventory}/>
        
       </div>
     );
