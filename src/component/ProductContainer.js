@@ -1,81 +1,76 @@
 import React, {useState} from 'react'
-import ProductCard from './ProductCard';
-import CartCard from './CartCard';
-import SearchBar from './SearchBar';
-function ProductContainer({products, setProducts}) {
-   
-    const [cart, setCart] = useState([]);
-    const [sortBy, setSortBy] = useState("Alphabetically")
+import ProductCard from './ProductCard'
+import SearchBar from './SearchBar'
+import SearchById from './SearchById'
+
+function ProductContainer({products, setProducts, cart,setCart, onUpdateInventory}) {
+  const [sortBy, setSortBy] = useState("Alphabetically")
   const [filterBy, setFilterBy] = useState("")
+  const [searchedProduct, setSearchedProduct] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
    
-  const updateInventory = async (productId) => {
-        const updatedProducts = products.map((product) =>
-          product.id === productId
-            ? { ...product, inventory: product.inventory - 1 }
-            : product
-        );
-         // Update the inventory on the server
-await fetch(`http://localhost:3001/products/${productId}`, {
-    method: 'PATCH',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ inventory: updatedProducts.find((p) => p.id === productId)?.inventory }),
-  });
 
-  setProducts(updatedProducts);
-};
+  const sortedProducts = [...products].sort((stockA, stockB) => {
+    if (sortBy === "Alphabetically") {
+      return stockA.name.localeCompare(stockB.name)
+    } else {
+      return stockA.price - stockB.price
+    }
+  })
+  const filteredProducts = sortedProducts.filter(stock => {
+    if (filterBy === "All") {
+      return true
+    } else {
+      return stock.category === filterBy
+    }
+  })
 
-const updateInventoryRem = async (productId) => {
-  const updatedProductsRem = products.map((product) =>
-  product.id === productId
-    ? { ...product, inventory: product.inventory + 1 }
-    : product
-);
- // Update the inventory on the server
-await fetch(`http://localhost:3001/products/${productId}`, {
-method: 'PATCH',
-headers: {
-'Content-Type': 'application/json',
-},
-body: JSON.stringify({ inventory: updatedProductsRem.find((p) => p.id === productId)?.inventory }),
-});
+  const handleSearchProductById = () => {
+    // Filter products based on the entered product ID
+    const foundProduct = products.find(product => (product.id) === parseInt(searchTerm));
 
-setProducts(updatedProductsRem);
+    if (foundProduct) {
+      setSearchedProduct(foundProduct);
+    } else {
+      alert('Product not found');
+    }
+  };
 
-}
-const sortedProducts = [...products].sort((stockA, stockB) => {
-  if (sortBy === "Alphabetically") {
-    return stockA.name.localeCompare(stockB.name)
-  } else {
-    return stockA.price - stockB.price
-  }
-})
-const filteredProducts = sortedProducts.filter(stock => {
-  if (filterBy === "All") {
-    return true
-  } else {
-    return stock.category === filterBy
-  }
-})
-
-    return (
+    
+  return (
+    <div className='product-container'>
+      <div> <h2>Products</h2> </div>
       <div>
-       <CartCard cart={cart} onUpdateInventoryRem={updateInventoryRem} 
-       setCart={setCart}/>
-       <SearchBar 
+      {searchedProduct && (
+        <div >
+         
+          <h4>WELCOME!!!</h4>
+          <h3>Searched Product</h3>
+          <div className='inventory'>
+          <h4>Name: {searchedProduct.name}</h4>
+          <p>Price: ${searchedProduct.price}</p>
+          <img className='image-container' src={searchedProduct.image} alt={searchedProduct.name} />
+           <p>{searchedProduct.productdesc}</p>
+           <p>Inventory: {searchedProduct.inventory}</p>
+          </div>
+        </div>
+      )} 
+      <SearchById onSearchProduct={handleSearchProductById} 
+      searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <SearchBar 
       sortBy={sortBy} 
       setSortBy={setSortBy} 
       filterBy={filterBy} 
-      setFilterBy={setFilterBy}/>
-      
-        <ProductCard products={filteredProducts} setCart={setCart} 
-        cart={cart} onUpdateInventory={updateInventory}/>
+  setFilterBy={setFilterBy}/>
+  <h3>Please Choose From These Products</h3>
+       <ProductCard   products={filteredProducts} cart={cart} setProducts={setProducts}
+       setCart={setCart}  onUpdateInventory={onUpdateInventory}
        
+       />
+       </div> 
+      
       </div>
-    );
-  }
-  
-
+  )
+}
 
 export default ProductContainer

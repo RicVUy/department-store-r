@@ -25,6 +25,17 @@ function NavBar() {
         Home
       </NavLink>
       <NavLink
+        to="/BuyerLogin"
+        exact
+        style={linkStyles}
+        activeStyle={{
+          background: "darkblue",
+        }}
+      >
+        Buyer Login
+      </NavLink>
+
+      <NavLink
         to="/ProductContainer"
         exact
         style={linkStyles}
@@ -34,7 +45,16 @@ function NavBar() {
       >
         Welcome Customers!
       </NavLink>
-
+      <NavLink
+        to="/CartCard"
+        exact
+        style={linkStyles}
+        activeStyle={{
+          background: "darkblue",
+        }}
+      >
+        Cart
+      </NavLink>
       <NavLink
         to="/AdminLogin"
         exact

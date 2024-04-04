@@ -1,39 +1,41 @@
-import React, {useState} from 'react'
-import { admin } from './data';
-function AdminLogIn( {isLoggedIn, setLoggedIn}) {
-    const [formData, setFormData] = useState({
+import React, { useState } from 'react';
+import { buyer } from './data';
+
+function BuyerLogin({ isLoggedIn1, setLoggedIn1 })  {
+ 
+      const [formData, setFormData] = useState({
         name: '',
         password: '',
       });
-    const [loginError, setLoginError] = useState('');
-      const [logIn, setLogIn] = useState(false)
+    
+      
+     // const [loginError, setLoginError] = useState('');
       
       const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
-        
       };
     
       const handleFormSubmit = (e) => {
         e.preventDefault();
-       //  admin authentication 
+    
+    
+    
+        //  buyer authentication 
         const { name, password } = formData;
         
-         for (let i=0; i<admin.length; i++){
-        if (name === admin[i].name && password === admin[i].password) {
+         for (let i=0; i<buyer.length; i++){
+        if (name === buyer[i].name1 && password === buyer[i].password1) {
           // If authentication is successful, fetch employee data
-          setLoggedIn(true);
-          setLogIn(!logIn)
-          setLoginError({loginError})
-          } else {
-           // setEmployeeData(null);
-      setLoginError('Invalid name or password');
-          }
+          setLoggedIn1(true);
+          
+        } 
     };
       }
-     return (
-    <div>
-       <h3>Administrator Login</h3>
+    
+    return (
+      <div>
+        <h3>Buyer Login</h3>
         <form onSubmit={handleFormSubmit}>
         <div>
           <label>Name:</label>
@@ -53,12 +55,11 @@ function AdminLogIn( {isLoggedIn, setLoggedIn}) {
             onChange={handleInputChange}
           />
         </div>
-       
-        <button type="submit">{logIn ? "Log out" : "Log in"}
-       </button>
-         </form>
-           </div>
-        )
-}
+        <button type="submit">Login</button>
+      </form>
 
-export default AdminLogIn
+      
+      </div>
+    );
+  };
+  export default BuyerLogin

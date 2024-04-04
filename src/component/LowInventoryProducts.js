@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import SearchBar from './SearchBar';
-//import SearchById from './SearchById';
+
 const LowInventoryProducts = ({ products}) => {
     const [sortBy, setSortBy] = useState("Alphabetically")
     const [filterBy, setFilterBy] = useState("")  

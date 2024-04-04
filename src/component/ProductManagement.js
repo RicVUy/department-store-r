@@ -1,12 +1,12 @@
-// src/ProductManagement.js
+
 import React, { useState, useEffect } from 'react';
 import DeleteProduct from './DeleteProduct';
 import SearchBar from './SearchBar';
 const ProductManagement = () => {
   const [products, setProducts] = useState([]);
-  const [sortBy, setSortBy] = useState("Alphabetically")
-  const [filterBy, setFilterBy] = useState("")
- // const [showArray, setShowArray] = useState(false);
+ 
+ const [sortBy, setSortBy] = useState("Alphabetically")
+ const [filterBy, setFilterBy] = useState("")
 
   useEffect(() => {
     const fetchData = async () => {
@@ -16,7 +16,7 @@ const ProductManagement = () => {
     };
 
     fetchData();
-  }, []);
+  }, [] );
 
   const deleteProduct = (productId) => {
     // Make a fetch DELETE request to delete the product
@@ -35,8 +35,11 @@ const ProductManagement = () => {
         alert('Failed to delete the product');
       });
   };
+
+  
  
-   const filteredProducts = products.filter(stock => {
+
+  const filteredProducts = products.filter(stock => {
     if (filterBy === "All") {
       return true
     } else {
@@ -44,35 +47,30 @@ const ProductManagement = () => {
     }
   })
 
-
-  return (
-    <div className='prod'>
-      
-      <h2>Product Management</h2>
+return (
+  <div className='product-management'>
     
-           <div className='resupply'>
-           <h2>Delete Items</h2>
-           <SearchBar 
-      sortBy={sortBy} 
-      setSortBy={setSortBy} 
-      filterBy={filterBy} 
-      setFilterBy={setFilterBy}/>
-      <ul className='delete'>
-        {filteredProducts.map((product) => (
-          <li key={product.id}>
-            {product.productdesc}{' '}
-            <DeleteProduct productId={product.id} onDeleteProduct={deleteProduct} />
-          </li>
-          
-        ))}
+    <h2>Product Management</h2>
+  
+         <div>
+         <h2>Delete Items</h2>
+         <SearchBar 
+    sortBy={sortBy} 
+    setSortBy={setSortBy} 
+    filterBy={filterBy} 
+    setFilterBy={setFilterBy}/>
+    <ul className='delete'>
+      {filteredProducts.map((product) => (
+        <li key={product.id}>
+          {product.productdesc}{' '}
+          <DeleteProduct productId={product.id} onDeleteProduct={deleteProduct} />
+        </li>
         
-      </ul>
-      </div>
+      ))}
+      
+    </ul>
     </div>
-  );
+  </div>
+);
 };
-
 export default ProductManagement;
-
-
- 

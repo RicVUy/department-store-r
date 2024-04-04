@@ -1,16 +1,4 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 .card-container {
   display: flex;
@@ -19,11 +7,18 @@ code {
 }
 .card {
   width: 23%; /* Adjust this percentage based on your design preferences */
+  height: 50%;
   margin-bottom: 20px;
   border: 5px solid #2b7255;
   overflow: hidden; /* Ensure the image doesn't overflow the card */
+  background-color: aquamarine;
+  text-align: center;
 }
-
+.card-image {
+  width: 100%; /* Make the image fill the entire width of the card */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Remove any extra spacing beneath the image */
+}
 
 .image-container {
   width: 200px; /* Set the desired width */
@@ -39,44 +34,63 @@ code {
 .card-content {
   padding: 10px;
 }
+
+
+
 @media (max-width: 768px) {
   .card {
     width: 100%; /* Full width for one card per row on smaller screens */
   }
+  .cart {
+    width: 100%;
+  }
 }
-.cart {
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
-  background-color: rgb(100, 237, 184);
+.inventory {
+  background-color: rgb(221, 217, 155);
+  text-align: center;
+  border: 5px rgb(89, 112, 155);
 }
-.delete {
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
-  background-color: rgb(224, 209, 222);
+.add-product {
+  background-color: rgb(129, 148, 190);
+  text-align: center;
+  border: 5px rgb(89, 112, 155);
 }
-.resupply {
-  background-color: lightgrey;
-  width: 200px;
-  border: 10px solid green;
-  padding: 50px;
-  margin: 20px;
+.cart-new {
+  background-color: rgb(228, 129, 228);
+  text-align: center;
+  border: 5px slateblue;
 }
-.prod {
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
-  background-color: rgba(237, 100, 207, 0.555);
+.search-bar {
+  background-color: rgb(212, 214, 108);
+  text-align: center;
+  border: 5px slateblue;
+}
+.update {
+  background-color: rgb(26, 185, 111);
+  text-align: center;
+  border: 5px slateblue;
+}
+.product-management {
+  background-color: rgb(108, 166, 214);
+  text-align: center;
+  border: 5px slateblue;
+}
+.search-by-id {
+  background-color: rgb(100, 117, 192);
+  text-align: center;
+  border: 10px black;
+}
+.butt {
+  background-color: #52080c;
+  border: none;
+  color: rgba(26, 10, 116, 0.329);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .sort {
@@ -88,15 +102,16 @@ code {
   padding: 0.5rem;
   background-color: rgba(237, 228, 100, 0.158);
 }
-
-.card1{
-  margin: 1rem;
+.product-container {
+  background-color: aquamarine;
+  text-align: center;
+  border: 5px slateblue;
+}
+.container1 {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
-  background-color: rgba(30, 51, 65, 0.158)
+  height: 100vh; /* Adjust the height of the container as needed */
 }
 button {
   background-color: #04AA6D;
@@ -110,27 +125,56 @@ button {
   margin: 1px .5px;
   cursor: pointer;
 }
-.butt {
-  background-color: #aa8304;
-  border: none;
-  color: rgba(37, 46, 83, 0.39);
-  padding: 15px 32px;
+
+.page-background {
+  background-image: url('https://cdn.pixabay.com/photo/2023/11/20/13/21/mountain-8401084_640.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
 }
-p {
-  color:darkorchid;
+
+.big-heading {
+  font-size: 5em;
+  color: blue;
+  /* Additional styles for your heading go here */
 }
-h4 {
-  color:rgb(0, 130, 33);
+.resupply {
+  background-color: lightgrey;
+  width: 200px;
+  border: 10px solid green;
+  padding: 50px;
+  margin: 20px;
 }
-h3 {
-  color:chocolate
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-h1 {
-  color:rgb(100, 125, 237)
+nav {
+  background-color: #7476f1;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  margin-right: 20px;
+}
+.bottom-links {
+  margin-top: auto;
 }

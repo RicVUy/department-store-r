@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Product from './Product'
+import Product1 from './Product1'
 
 function ProductCard({products, setCart, cart, onUpdateInventory}) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -12,7 +12,7 @@ function ProductCard({products, setCart, cart, onUpdateInventory}) {
   product.name.toLowerCase().includes(searchTerm.toLowerCase())
 );
 
-    const productList = filteredProducts.map((product) => <Product key= {product.id} 
+    const productList = filteredProducts.map((product) => <Product1 key= {product.id} 
     product={product} setCart={setCart} cart={cart} 
     onUpdateInventory={onUpdateInventory}/> )
   return (

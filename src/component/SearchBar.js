@@ -2,9 +2,9 @@ import React from "react";
 
 function SearchBar({sortBy, setSortBy, filterBy, setFilterBy}) {
   return (
-    <div className="sort">
-      <h4>WELCOME!!!</h4>
-      <h3>Please Choose From These Products</h3>
+    <div className="search-bar">
+      
+      <h3>Choose Products By Category</h3>
       <strong>Sort by:</strong>
       <label>
         <input

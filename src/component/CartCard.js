@@ -22,7 +22,7 @@ function CartCard({cart, onUpdateInventoryRem, setCart}) {
 
   return (
     <div>
-         <div className='cart'>
+         <div className='cart-new'>
             
             <h2>Products in Cart</h2>
             <ul>

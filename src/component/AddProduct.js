@@ -63,41 +63,44 @@ function AddProduct ({ onAddProduct })  {
   };
 
   return (
-    <div className= "card1">
+    <div className= "add-product">
       <h2>Add New Product</h2>
-      <form> </form>
-      <label>
+      <ul>
+      <form>
+     <li> <label>
         Name:
         <input type="text" name="name" value={newProduct.name} onChange={handleInputChange} />
-      </label>
-      <label>
+      </label> </li>
+      <li><label>
         Image:
       <input type="text" name="image" value={newProduct.image}placeholder="Image URL" onChange={handleInputChange}/>
-      </label>
-      <label>
+      </label> </li>
+      <li><label>
         Price:
         <input type="number" name="price" value={newProduct.price} onChange={handleInputChange} />
-      </label>
-      <label>
+      </label></li>
+      <li><label>
         Neck Design:
         <input type="text" name="neckDesign" value={newProduct.neckDesign} onChange={handleInputChange} />
-      </label>
-      <label>
+      </label></li>
+      <li><label>
         Color:
         <input type="text" name="color" value={newProduct.color} onChange={handleInputChange} />
-      </label>
-      <label>
+      </label></li>
+      <li><label>
         Size:
         <input type="text" name="size" value={newProduct.size} onChange={handleInputChange} />
-      </label>
-      <label>
+      </label></li>
+      <li> <label>
         Product Description:
         <input type="text" name="productdesc" value={newProduct.productdesc} onChange={handleInputChange} />
-      </label>
-      <label>
+      </label></li>
+      <li> <label>
         Inventory:
         <input type="number" name="inventory" value={newProduct.inventory} onChange={handleInputChange} />
-      </label>
+      </label></li>
+      </form>
+      </ul>
       <button onClick={handleAddProduct}>Add Product</button>
     </div>
   );
