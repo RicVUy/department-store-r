@@ -5,12 +5,12 @@ import EditedProduct from './component/EditedProduct';
 import ProductManagement from './component/ProductManagement';
 import CartCard from './component/CartCard';
 import LowInventoryProducts from './component/LowInventoryProducts.js';
-import Header from './component/Header';
+//import Header from './component/Header';
 import {Route, Switch, Redirect} from "react-router-dom";
 import NavBar1 from './component/NavBar1';
 import AdminLogIn from './component/AdminLogIn';
 import BuyerLogin from './component/BuyerLogin';
-
+import Shop from './Pages/Shop.jsx';
 function App1() {
   const [products, setProducts] = useState([])
   const [cart, setCart] = useState([]);
@@ -70,8 +70,10 @@ setProducts([...products, newProduct])
       
       <Route  exact path="/BuyerLogin">
       <BuyerLogin isLoggedIn1={isLoggedIn1} setLoggedIn1={setLoggedIn1}/>
-      </Route>
-      
+  </Route>
+       {/*<Route  exact path="/BuyerLogin">
+      <BuyerLogin isLoggedIn1={isLoggedIn1} setLoggedIn1={setLoggedIn1}/>
+  </Route>*/}
       <Route exact path="/ProductContainer">
      {isLoggedIn1 ? <ProductContainer products={products} setProducts={setProducts}
      cart={cart} setCart={setCart} onUpdateInventory={updateInventory}/> : 
@@ -79,7 +81,7 @@ setProducts([...products, newProduct])
        </Route>
      
       <Route exact path="/CartCard">
-     { isLoggedIn1 ? <CartCard cart={cart} setCart={setCart} 
+     { isLoggedIn1 ? <CartCard cart={cart} setCart={setCart} products={products}
      onUpdateInventoryRem={updateInventoryRem}/> : <Redirect to="/BuyerLogin" />}
      </Route>
      
@@ -106,7 +108,7 @@ setProducts([...products, newProduct])
     </Route>
     
     <Route path="/">
-    <Header/>
+    <Shop/>
     </Route>
     
     </Switch>

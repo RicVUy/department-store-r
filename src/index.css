@@ -157,7 +157,7 @@ body {
   margin: 0;
   padding: 0;
 }
-nav {
+/*nav {
   background-color: #7476f1;
   color: white;
   padding: 10px 20px;
@@ -175,6 +175,44 @@ nav ul {
 nav ul li {
   margin-right: 20px;
 }
+.top-links {
+  margin-bottom: auto; /* Pushes top links to the top 
+}
 .bottom-links {
   margin-top: auto;
+}*/
+/* Navbar.css */
+nav {
+  background-color: #3b679b;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  
 }
+.top-links ul,
+.bottom-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.top-links ul li,
+.bottom-links ul li {
+  margin-right: 20px;
+}
+
+.bottom-links {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+
+
