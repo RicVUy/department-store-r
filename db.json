@@ -120,5 +120,74 @@
       "price": 21,
       "inventory": "50"
     }
+  ],
+  "buyers": [
+    {
+      "id": 1,
+      "name": "Clementine Bauch",
+      "username": "Samantha",
+      "email": "Nathan@yesenia.net",
+      "cartContent": [
+        {
+          "productdesc": "PN#10/Lifeline/collar/white/XL",
+          "price": 21,
+          "quantity": 1
+        },
+        {
+          "totalAmount": 21,
+          "totalPlusTax": 23.1,
+          "delFee": 2,
+          "total": 25.1
+        }
+      ]
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "": "mabuhay",
+      "id": 2
+    },
+    {
+      "name": "",
+      "username": "",
+      "email": "",
+      "cartContent": [
+        {
+          "productdesc": "",
+          "price": 0,
+          "quantity": 0
+        },
+        {
+          "totalAmount": 0,
+          "totalPlusTax": 0,
+          "delFee": 0,
+          "total": 0
+        }
+      ],
+      "": "malikot",
+      "id": 3
+    },
+    {
+      "name": "Merei",
+      "username": "smile",
+      "email": "apple.@yahoo.com",
+      "password": "007",
+      "cartContent": [
+        {
+          "productdesc": "",
+          "price": 0,
+          "quantity": 0
+        },
+        {
+          "totalAmount": 0,
+          "totalPlusTax": 0,
+          "delFee": 0,
+          "total": 0
+        }
+      ],
+      "": "M",
+      "id": 4
+    }
   ]
 }
