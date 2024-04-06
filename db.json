@@ -141,17 +141,11 @@
         }
       ]
     },
+   
     {
-      "name": "",
-      "email": "",
-      "password": "",
-      "": "mabuhay",
-      "id": 2
-    },
-    {
-      "name": "",
-      "username": "",
-      "email": "",
+      "name": "Edna Uy",
+      "username": "EdnaUy",
+      "email": "edna@gmail.com",
       "cartContent": [
         {
           "productdesc": "",
@@ -165,8 +159,7 @@
           "total": 0
         }
       ],
-      "": "malikot",
-      "id": 3
+      "id": 2
     },
     {
       "name": "Merei",
@@ -186,7 +179,26 @@
           "total": 0
         }
       ],
-      "": "M",
+      "id": 3
+    },
+    {
+      "name": "Ricardo",
+      "username": "RicardoUy",
+      "email": "rvuy62@yahoo.com",
+      "password": "dolphin",
+      "cartContent": [
+        {
+          "productdesc": "",
+          "price": 0,
+          "quantity": 0
+        },
+        {
+          "totalAmount": 0,
+          "totalPlusTax": 0,
+          "delFee": 0,
+          "total": 0
+        }
+      ],
       "id": 4
     }
   ]

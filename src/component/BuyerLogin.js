@@ -1,17 +1,12 @@
-import React, { useState} from 'react';
-import { buyer } from './data';
+import React, { useState, useEffect} from 'react';
+
 import '../LoginSignup.css'
 
 function BuyerLogin({ isLoggedIn1, setLoggedIn1 })  {
- //const [buyers, setBuyers] = useState([])
-  //const [username, setUsername] = useState('');
-  //const [password, setPassword] = useState('');
-  //const [error, setError] = useState('');
-      const [formData, setFormData] = useState({
-        name: '',
-        password: '',
-
-      });
+ const [buyers, setBuyers] = useState([])
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+ 
       const [loginError, setLoginError] = useState('');
       const [logIn, setLogIn] = useState(false)
       const [formData1, setFormData1] =useState({
@@ -34,48 +29,33 @@ function BuyerLogin({ isLoggedIn1, setLoggedIn1 })  {
          ]
       })
       
-     // const [loginError, setLoginError] = useState('');
-    /* useEffect(() => {
+    
+     useEffect(() => {
       fetch("http://localhost:3001/buyers")
           .then(r => r.json())
           .then(setBuyers) 
-    }, []);*/
-
-      const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-      };
-      /*const handleFormSubmit = (e) => {
+          
+    }, []);
+    console.log(buyers)
+    
+      const handleFormSubmit = (e) => {
         e.preventDefault();
         const user = buyers.find(user => user.username === username && user.password === password);
 
     if (user) {
       // Successful login
+      setLoggedIn1(true);
+      setLogIn(!logIn)
+      setLoginError({loginError})
+      } else {
+       
+  setLoginError('Invalid name or password');
+    
       console.log('Login successful');
-      // Perform actions such as setting authentication state or redirecting
-    } else {
-      // Invalid credentials
-      setError('Invalid username or password');
+      
     }
-      }*/
-      const handleFormSubmit = (e) => {
-        e.preventDefault();
-     //  buyer authentication 
-        const { name, password } = formData;
-        
-         for (let i=0; i<buyer.length; i++){
-        if (name === buyer[i].name1 && password === buyer[i].password1) {
-          // If authentication is successful, fetch employee data
-          setLoggedIn1(true);
-          setLogIn(!logIn)
-          setLoginError({loginError})
-          } else {
-           // setEmployeeData(null);
-      setLoginError('Invalid name or password');
-        
-        } 
-    };
-  }
+      }
+      
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -137,9 +117,9 @@ function BuyerLogin({ isLoggedIn1, setLoggedIn1 })  {
           <label>Name:</label>
           <input
             type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
+            name="username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
           />
         </div>
         <div className='loginsignup-fields'>
@@ -147,8 +127,8 @@ function BuyerLogin({ isLoggedIn1, setLoggedIn1 })  {
           <input
             type="password"
             name="password"
-            value={formData.password}
-            onChange={handleInputChange}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </div>
 
