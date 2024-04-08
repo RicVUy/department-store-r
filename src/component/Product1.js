@@ -23,8 +23,9 @@ function Product1({product,   setCart, onUpdateInventory}) {
         {
           id: cartItemId,
           productId: product.id,
-          name: product.productdesc,
+           name: product.productdesc,
           price: product.price,
+          image: product.image,
          quantity: 1
           
         },

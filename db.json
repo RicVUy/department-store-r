@@ -10,7 +10,7 @@
       "size": "small",
       "productdesc": "PN#01/Yalex/rn/white/S",
       "price": 10.5,
-      "inventory": 11
+      "inventory": 10
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "size": "medium",
       "productdesc": "PN#02/Yalex/rn/white/M",
       "price": "11.75",
-      "inventory": 38
+      "inventory": 37
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "size": "large",
       "productdesc": "PN#03/Yalex/rn/white/L",
       "price": 12.5,
-      "inventory": 248
+      "inventory": 237
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@
       "size": "small",
       "productdesc": "PN#04/Blucorner/rn/black/S",
       "price": 12.75,
-      "inventory": 70
+      "inventory": 68
     },
     {
       "id": 5,
@@ -70,7 +70,7 @@
       "size": "large",
       "productdesc": "PN#06/Blucorner/rn/black/L",
       "price": 14.5,
-      "inventory": 2995
+      "inventory": 2981
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@
       "size": "small",
       "productdesc": "PN#07/Lifeline/collar/white/S",
       "price": 18.5,
-      "inventory": 71
+      "inventory": 68
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@
       "size": "medium",
       "productdesc": "PN#08/Lifeline/collar/white/M",
       "price": 19.5,
-      "inventory": 22
+      "inventory": 20
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@
       "size": "large",
       "productdesc": "PN#09/Lifeline/collar/white/L",
       "price": 20,
-      "inventory": 26
+      "inventory": 24
     },
     {
       "id": 10,
@@ -118,7 +118,7 @@
       "size": "extralarge",
       "productdesc": "PN#10/Lifeline/collar/white/XL",
       "price": 21,
-      "inventory": "50"
+      "inventory": 44
     }
   ],
   "buyers": [
@@ -141,7 +141,6 @@
         }
       ]
     },
-   
     {
       "name": "Edna Uy",
       "username": "EdnaUy",
@@ -200,6 +199,26 @@
         }
       ],
       "id": 4
+    },
+    {
+      "name": "Johnny",
+      "username": "JohnnyDiego",
+      "email": "jd@gmail.com",
+      "password": "okay",
+      "cartContent": [
+        {
+          "productdesc": "",
+          "price": 0,
+          "quantity": 0
+        },
+        {
+          "totalAmount": 0,
+          "totalPlusTax": 0,
+          "delFee": 0,
+          "total": 0
+        }
+      ],
+      "id": 5
     }
   ]
 }

@@ -1,11 +1,14 @@
 import React from 'react'
-//import 'CartItem.css'
+import './CartItems.css'
+import remove_icon from './Assets/Assets/cart_cross_icon.png'
 function CartCard({cart, onUpdateInventoryRem, setCart, products}) {
    
     const calculateTotalPrice = () => {
-        return cart.reduce((total, product) => total + parseFloat(product.price), 0);
+        return cart.reduce((total, product) => total + (parseFloat(product.price)), 0);
       };
-
+     const totalCartAmount = () => {
+      return calculateTotalPrice()*1.1
+    }
       
         const removeFromCart = ( productId) => {
           const updatedCart = cart.filter((product) => product.id !== productId );
@@ -21,23 +24,38 @@ function CartCard({cart, onUpdateInventoryRem, setCart, products}) {
         };
 
   return (
-    <div>
-         <div className='cart-new'>
-            
-            <h2>Products in Cart</h2>
-            <ul>
+   <div className='cartitems'>
+    
+         <div className="cartitems-format-main">
+         <p>Products</p>
+    <p>Title</p>
+    <p>Price</p>
+    <p>Remove</p>
+    </div>
+<hr />
+   
               {cart.map((product, index) => (
-                <li key={index}>
-                  {product.productdesc} - ${product.price}
-                  <button onClick={() => removeFromCart(product.id)}>Remove from Cart</button>
-                </li>
+                <div key={index} className=" cartitems-format-main">
+                    <img src={product.image} alt="" className="carticon-product-icon"/>
+                 <p> {product.name} </p>
+                 <p>  ${product.price}  </p>
+                 <img className='cartitems-remove-icon' src={remove_icon} onClick={()=>{removeFromCart(product.id)}}alt="" />
+                 </div>
              ))}
              
-            </ul>
-            <p>Total Price: ${calculateTotalPrice()}</p>
+            
+            <h3>Total Amount: ${calculateTotalPrice()}</h3>
+           
+            <h2>Total Amount + 10% tax: ${totalCartAmount().toFixed(2)}</h2>
+         
+            <div className="cartitems-total-item">
+                <p>Shipping Fee</p>
+                <p>Free</p>
+            </div>
           </div>
-    </div>
- /*<div className='cartitems'>
+
+ 
+/*<div className='cartitems'>
 <div className="cartitems-format-main">
     <p>Products</p>
     <p>Title</p>
@@ -48,20 +66,20 @@ function CartCard({cart, onUpdateInventoryRem, setCart, products}) {
     
 </div>
 <hr />
-{products.map((e)=>{
-    if(cart[e.id]>0){
-     return (<div>
+{cart.map((e)=>{
+    //if(cart[e.id]>0){
+     return (<div >
     <div className=" cartitems-format-main">
         <img src={e.image} alt="" className="carticon-product-icon" />
         <p>{e.name}</p>
         <p>${e.price}</p>
-        <p className='cartitems-quantity'>{cartItems[e.id]}</p>
-        <p>${e.price*cart[e.id]}</p>
+        <p className='cartitems-quantity'>{(cart[e.id])}</p>
+        <p>${(e.price)*(cart[e.id])}</p>
         <img className='cartitems-remove-icon' src={remove_icon} onClick={()=>{removeFromCart(e.id)}}alt="" />
     </div>
     <hr />
-</div>)}
-       return null;
+</div>)
+       //return null;
 })}
 <div className="cartitems-down">
     <div className="cartitems-total">
@@ -69,7 +87,7 @@ function CartCard({cart, onUpdateInventoryRem, setCart, products}) {
         <div>
             <div className="cartitems-total-item">
                 <p>Subtotal</p>
-                <p>${getTotalCartAmount()}</p>
+                <p>${totalCartAmount()}</p>
             </div>
             <hr />
             <div className="cartitems-total-item">
@@ -92,7 +110,7 @@ function CartCard({cart, onUpdateInventoryRem, setCart, products}) {
         </div>
     </div>
 </div>
-    </div>*/
+*/
 
   )
 }
