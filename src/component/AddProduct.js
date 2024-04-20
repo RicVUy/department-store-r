@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 
 function AddProduct ({ onAddProduct })  {
   const [newProduct, setNewProduct] = useState({
+    category: '',
     name: '',
     image: '',
-        neckDesign: '',
-        color: '',
+       color: '',
         size: '',
         price: 0,
         productdesc: '',
@@ -20,9 +20,9 @@ function AddProduct ({ onAddProduct })  {
   
  const handleAddProduct = async () => {
     // Validate if required fields are filled
-    if (!newProduct.name || !newProduct.price 
-      || !newProduct.inventory || !newProduct.image
-      || !newProduct.neckDesign || !newProduct.color
+    if ( !newProduct.category ||!newProduct.name 
+      || !newProduct.price || !newProduct.inventory
+      || !newProduct.image || !newProduct.color
       || !newProduct.size || !newProduct.productdesc) {
       alert('Please fill in all fields');
       return;
@@ -47,10 +47,11 @@ function AddProduct ({ onAddProduct })  {
     onAddProduct(addedProduct);
 
     // Clear the form
-    setNewProduct({ name: '', 
+    setNewProduct({ 
+      category: '',
+      name: '', 
     price: 0, 
     image: '',
-    neckDesign: '',
     color: '',
     size: '',
     productdesc: '',
@@ -72,16 +73,16 @@ function AddProduct ({ onAddProduct })  {
         <input type="text" name="name" value={newProduct.name} onChange={handleInputChange} />
       </label> </li>
       <li><label>
+      Category:
+        <input type="text" name="category" value={newProduct.category} onChange={handleInputChange} />
+      </label> </li>
+      <li><label>
         Image:
       <input type="text" name="image" value={newProduct.image}placeholder="Image URL" onChange={handleInputChange}/>
       </label> </li>
       <li><label>
         Price:
         <input type="number" name="price" value={newProduct.price} onChange={handleInputChange} />
-      </label></li>
-      <li><label>
-        Neck Design:
-        <input type="text" name="neckDesign" value={newProduct.neckDesign} onChange={handleInputChange} />
       </label></li>
       <li><label>
         Color:

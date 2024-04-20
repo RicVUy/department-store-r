@@ -1,5 +1,5 @@
 import React from 'react'
-import 'LoginSignup.css'
+//import '..Pages'
 import BuyerLogin from './BuyerLogin'
 
 const LoginSignup = () => {
@@ -15,8 +15,8 @@ const LoginSignup = () => {
         <button>Continue</button>
         <p className="loginsignup-login">
           Already have an account?
-          <button onClick={<BuyerLogin/>}>Login here</button>
-         {/*} <span>Login here</span>*/}
+          <span>   <button onClick={<BuyerLogin/>}>Login here</button>
+          </span>
         </p>
         <div className="loginsignup-agree">
           <input type='checkbox' name='' id=''/>

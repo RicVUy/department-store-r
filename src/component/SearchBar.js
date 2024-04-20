@@ -33,8 +33,10 @@ function SearchBar({sortBy, setSortBy, filterBy, setFilterBy}) {
         <option value="">Choose Category</option>
         <option value="All">All</option>
           <option value="Tshirt">Tshirt</option>
-          <option value="Polo">Polo</option>
-          <option value="formal">formal</option>
+          <option value="school-uniform">School Uniform</option>
+          <option value="textiles">Textiles</option>
+          <option value="floormat">Floor/Tablemat</option>
+          <option value="foam">Foam/Covers</option>
         </select>
       </label>
     </div>

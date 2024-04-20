@@ -5,7 +5,6 @@
       "category": "Tshirt",
       "name": "Yalex",
       "image": "https://vignette.wikia.nocookie.net/westworld/images/5/51/Dolores_Abernathy_Vanishing_Point.jpg/revision/latest?cb=20180613181613",
-      "neckDesign": "roundneck",
       "color": "white",
       "size": "small",
       "productdesc": "PN#01/Yalex/rn/white/S",
@@ -17,7 +16,6 @@
       "category": "Tshirt",
       "name": "Yalex",
       "image": "https://i.pinimg.com/originals/71/16/52/7116526bc704ba3c7b76891377900a60.jpg",
-      "neckDesign": "roundneck",
       "color": "black",
       "size": "medium",
       "productdesc": "PN#02/Yalex/rn/white/M",
@@ -29,7 +27,6 @@
       "category": "Tshirt",
       "name": "Yalex",
       "image": "https://th.bing.com/th?id=OIP.zu4bmEKZBr58v_Tq6R56DQHaDt&w=349&h=174&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2",
-      "neckDesign": "roundneck",
       "color": "white",
       "size": "large",
       "productdesc": "PN#03/Yalex/rn/white/L",
@@ -38,10 +35,9 @@
     },
     {
       "id": 4,
-      "category": "Polo",
+      "category": "Tshirt",
       "name": "Blucorner",
       "image": "https://shopping.traveltheworld.com.ua/wp-content/uploads/2015/03/Bangkok-Fashion-Outlet-2.jpg",
-      "neckDesign": "Vneck",
       "color": "black",
       "size": "small",
       "productdesc": "PN#04/Blucorner/rn/black/S",
@@ -50,46 +46,42 @@
     },
     {
       "id": 5,
-      "category": "Polo",
+      "category": "Tshirt",
       "name": "Blucorner",
       "image": "https://th.bing.com/th/id/OIP.lzRxHpHC13nV4_1rX_185AHaEK?w=236&h=180&c=7&r=0&o=5&cb=11&dpr=1.1&pid=1.7",
-      "neckDesign": "Vneck",
       "color": "black",
       "size": "medium",
       "productdesc": "PN#05/Blucorner/rn/black/M",
       "price": 13.5,
-      "inventory": 4
+      "inventory": 3
     },
     {
       "id": 6,
-      "category": "Polo",
+      "category": "Tshirt",
       "name": "Blucorner",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/affordableclothing-1586354369.png?crop=1.00xw:1.00xh;0,0&resize=1200:*",
-      "neckDesign": "Vneck",
       "color": "black",
       "size": "large",
       "productdesc": "PN#06/Blucorner/rn/black/L",
       "price": 14.5,
-      "inventory": 2981
+      "inventory": 2977
     },
     {
       "id": 7,
-      "category": "Polo",
+      "category": "Tshirt",
       "name": "Lifeline",
       "image": "https://th.bing.com/th/id/R.85490756715ffcc97c6c1ddac139715a?rik=sbJWkL6zH33DDw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-AITR-AwIwT4%2fThLm5tobj_I%2fAAAAAAAABzE%2f7JuGOciGehU%2fs1600%2fPicture-12.jpg&ehk=GFeNelXD6R9uvI0jxfd88Pey69Ul0ti%2btSeq3e7VSvw%3d&risl=&pid=ImgRaw&r=0",
-      "neckDesign": "withCollar",
       "color": "white",
       "size": "small",
       "productdesc": "PN#07/Lifeline/collar/white/S",
       "price": 18.5,
-      "inventory": 68
+      "inventory": 66
     },
     {
       "id": 8,
-      "category": "formal",
+      "category": "Tshirt",
       "name": "Lifeline",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/d685d281157223.5e970b355c15b.jpg",
-      "neckDesign": "withCollar",
       "color": "white",
       "size": "medium",
       "productdesc": "PN#08/Lifeline/collar/white/M",
@@ -98,10 +90,9 @@
     },
     {
       "id": 9,
-      "category": "formal",
+      "category": "Tshirt",
       "name": "Lifeline",
       "image": "https://i.pinimg.com/originals/80/72/7a/80727af6f2f326af0e6bfab20a1d0626.jpg",
-      "neckDesign": "withCollar",
       "color": "white",
       "size": "large",
       "productdesc": "PN#09/Lifeline/collar/white/L",
@@ -110,15 +101,151 @@
     },
     {
       "id": 10,
-      "category": "formal",
+      "category": "Tshirt",
       "name": "Lifeline",
       "image": "https://i.ytimg.com/vi/GT55DrHptD0/maxresdefault.jpg",
-      "neckDesign": "withCollar",
       "color": "white",
       "size": "extralarge",
       "productdesc": "PN#10/Lifeline/collar/white/XL",
       "price": 21,
       "inventory": 44
+    },
+    {
+      "category": "textiles",
+      "name": "curtain",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.KHsiQf0Y3ZM9Cu1Iv0Vy5wHaFd&pid=Api&P=0&h=220",
+      "color": "yellow",
+      "size": "normal",
+      "price": "056",
+      "productdesc": "Curtain/yellow/P56/yd",
+      "inventory": "100",
+      "id": 11
+    },
+    {
+      "category": "floormat",
+      "name": "lenoleum",
+      "image": "https://images.unsplash.com/photo-1515179314943-a93af721c8d9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZsb29yJTIwbWF0fGVufDB8fDB8fHww",
+      "color": "beige",
+      "size": "72 in width",
+      "price": "89",
+      "productdesc": "lenoleum/beige/89/yd",
+      "inventory": "056",
+      "id": 12
+    },
+    {
+      "category": "floormat",
+      "name": "lenoleum",
+      "price": "98",
+      "image": "https://3dlancer.net/upload/modelimages/67/12067/texture-linoleum-linoleum-63537-copy.jpg",
+      "color": "brown",
+      "size": "72 in width",
+      "productdesc": "lenoleum/brown/P98/yd",
+      "inventory": "30",
+      "id": 13
+    },
+    {
+      "category": "floormat",
+      "name": "Lenoleum",
+      "price": "120",
+      "image": "https://www.homeflooringpros.com/wp-content/uploads/2021/06/linoleum-flooring-guide-768x336.jpg",
+      "color": "green",
+      "size": "80 in width",
+      "productdesc": "Lenoleum/green/P120/yd",
+      "inventory": "25",
+      "id": 14
+    },
+    {
+      "category": "textiles",
+      "name": "sofa upholstery",
+      "price": "150",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.Mci9MaFBvYKwsMK5uZU50wHaFj&pid=Api&P=0&h=220",
+      "color": "cream",
+      "size": "60 in width",
+      "productdesc": "Upholstery/cream/P150/yd",
+      "inventory": "50",
+      "id": 15
+    },
+    {
+      "category": "textiles",
+      "name": "sofa upholstery",
+      "price": "130",
+      "image": "https://images.furnituredealer.net/img/products/seven_seas_seating_by_bradington_young/color/ss185_ss185-03-089-b.jpg",
+      "color": "brown",
+      "size": "60 in width",
+      "productdesc": "dark brown",
+      "inventory": "45",
+      "id": 16
+    },
+    {
+      "category": "foam",
+      "name": "uratex foam",
+      "price": "4500",
+      "image": "https://sureline.ca/img/gallery/mattresses_foam-layers_gr-yellow-bl_1000x500.jpg",
+      "color": "white",
+      "size": "5x54x75",
+      "productdesc": "UratexFoam/5x54x75/P4500",
+      "inventory": 2,
+      "id": 17
+    },
+    {
+      "category": "foam",
+      "name": "ordinary foam",
+      "price": "02500",
+      "image": "https://www.foambymail.com/blog/wp-content/uploads/memory_topper2.jpg",
+      "color": "blue",
+      "size": "3x60x75",
+      "productdesc": "OrdinaryFoam/3x60x75/P2500",
+      "inventory": 4,
+      "id": 18
+    },
+    {
+      "category": "school-uniform",
+      "name": "Checkered Skirt/white blouse",
+      "price": "450",
+      "image": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/272dd72e8ed016a27d32cb7c63b73210.jpg?imageView2/2/w/800/q/70/format/webp",
+      "color": "blue",
+      "size": "medium",
+      "productdesc": "CheckSkirt/WhiteB/blue/P450",
+      "inventory": "6",
+      "id": 19
+    },
+    {
+      "category": "school-uniform",
+      "name": "Polo and pants",
+      "price": "560",
+      "image": "https://images.unsplash.com/photo-1619910114967-593e13f2487f?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "color": "white/blue",
+      "size": "Small",
+      "productdesc": "PoloPants/white/blueP560",
+      "inventory": "12",
+      "id": 20
+    }
+  ],
+  "allProducts": [
+    {
+      "id": 1,
+      "category": "Tshirt",
+      "image": "https://i.ytimg.com/vi/GT55DrHptD0/maxresdefault.jpg"
+    },
+    {
+      "id": 2,
+      "category": "School Uniforms",
+      "image": "https://www.vhv.rs/dpng/d/99-996299_set-of-school-uniform-hd-png-download.png"
+    },
+    {
+      "id": 3,
+      "category": "Textiles",
+      "image": "https://p7.hiclipart.com/preview/643/503/608/textile-india-woven-fabric-printing-retail-fabric.jpg"
+    },
+    {
+      "id": 4,
+      "category": "Floormat",
+      "image": "https://www.texturepalace.com/wp-content/uploads/1_textile_texture_prew_10_01_29.jpg"
+    },
+    {
+      "id": 5,
+      "category": "Foam and Covers",
+      "image": "https://i.ytimg.com/vi/GT55DrHptD0/maxresdefault.jpg"
     }
   ],
   "buyers": [

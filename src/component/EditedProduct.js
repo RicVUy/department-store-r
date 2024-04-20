@@ -76,7 +76,7 @@ function ProductUpdateForm({ productData, onUpdateProduct }) {
   
   const [name, setName] = useState(productData.name);
   const [image, setImage] = useState(productData.image);
-  const [neckDesign, setneckDesign] = useState(productData.neckDesign)
+ 
   const [color, setcolor] = useState(productData.color)
   const [size, setsize] = useState(productData.size)
   const [price, setprice] = useState(productData.price)
@@ -88,7 +88,7 @@ function ProductUpdateForm({ productData, onUpdateProduct }) {
     const updatedData = {
       name,
       image,
-      neckDesign,
+     
         color,
         size,
         price,
@@ -118,10 +118,7 @@ function ProductUpdateForm({ productData, onUpdateProduct }) {
         Price: </label>
         <input type="number" name="price" value={price} onChange= {(e) => setprice(e.target.value)}/>
         </div>
-        <div><label>
-        Neck Design:</label>
-        <input type="text" name="neckDesign" value={neckDesign} onChange={(e) => setneckDesign(e.target.value)} />
-        </div>
+       
         <div><label>
         Color:</label>
         <input type="text" name="color" value={color} onChange ={(e) => setcolor(e.target.value)}/>

@@ -7,21 +7,23 @@ import CartCard from './component/CartCard';
 import LowInventoryProducts from './component/LowInventoryProducts.js';
 //import Header from './component/Header';
 import {Route, Switch, Redirect} from "react-router-dom";
+
 import NavBar1 from './component/NavBar1';
 import AdminLogIn from './component/AdminLogIn';
 import BuyerLogin from './component/BuyerLogin';
 import Shop from './Pages/Shop.jsx';
+//import ShopMain from './component/ShopMain.jsx';
 function App1() {
   const [products, setProducts] = useState([])
   const [cart, setCart] = useState([]);
   const [isLoggedIn, setLoggedIn] = useState(false);
   const [isLoggedIn1, setLoggedIn1] = useState(false);
+ 
   useEffect(() => {
-    fetch("http://localhost:3001/Products")
+    fetch("http://localhost:3001/products")
         .then(r => r.json())
         .then(setProducts) 
   }, []);
-
  
   const updateInventory = async (productId) => {
     const updatedProducts = products.map((product) =>
@@ -71,9 +73,11 @@ setProducts([...products, newProduct])
       <Route  exact path="/BuyerLogin">
       <BuyerLogin isLoggedIn1={isLoggedIn1} setLoggedIn1={setLoggedIn1}/>
   </Route>
-       {/*<Route  exact path="/BuyerLogin">
-      <BuyerLogin isLoggedIn1={isLoggedIn1} setLoggedIn1={setLoggedIn1}/>
+       {/*<Route  exact path="/ShopMain">
+      <ShopMain isLoggedIn1={isLoggedIn1} setLoggedIn1={setLoggedIn1}/>
   </Route>*/}
+
+
       <Route exact path="/ProductContainer">
      {isLoggedIn1 ? <ProductContainer products={products} setProducts={setProducts}
      cart={cart} setCart={setCart} onUpdateInventory={updateInventory}/> : 

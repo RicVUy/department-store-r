@@ -2,6 +2,9 @@ import React, {useState} from 'react'
 import ProductCard from './ProductCard'
 import SearchBar from './SearchBar'
 import SearchById from './SearchById'
+import Prodavailable from './ProdAvailable/Prodavailable'
+import './ProductContainer.css'
+
 
 function ProductContainer({products, setProducts, cart,setCart, onUpdateInventory}) {
   const [sortBy, setSortBy] = useState("Alphabetically")
@@ -36,10 +39,12 @@ function ProductContainer({products, setProducts, cart,setCart, onUpdateInventor
     }
   };
 
-    
+   
   return (
     <div className='product-container'>
-      <div> <h2>Products</h2> </div>
+      <div> <h2>Products</h2> 
+     <div><Prodavailable/></div>
+      </div>
       <div>
       {searchedProduct && (
         <div >
@@ -68,7 +73,7 @@ function ProductContainer({products, setProducts, cart,setCart, onUpdateInventor
        
        />
        </div> 
-      
+     
       </div>
   )
 }

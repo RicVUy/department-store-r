@@ -12,14 +12,14 @@
     padding-left: 180px;
     line-height: 1.1;
 }
-.hero-left h2{
-    color: #090909;
-    font-size: 26px;
+.hero-left h1{
+    color: #1d408196;
+    font-size: 80px;
     font-weight: 600;
 }
 .hero-left p{
-    color: #171717;
-    font-size: 100px;
+    color: #510868;
+    font-size: 60px;
     font-weight: 700
 }
 .hero-hand-icon{
@@ -28,7 +28,7 @@
     gap: 20px;
 }
 .hero-hand-icon img{
-    width: 105px;
+    width: 205px;
 }
 .hero-latest-btn{
     display: flex;

@@ -1,5 +1,7 @@
 
 
+
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -34,6 +36,7 @@
 .card-content {
   padding: 10px;
 }
+
 
 
 
@@ -81,7 +84,7 @@
   border: 10px black;
 }
 .butt {
-  background-color: #52080c;
+  background-color: #b8ddd2;
   border: none;
   color: rgba(26, 10, 116, 0.329);
   padding: 15px 32px;
