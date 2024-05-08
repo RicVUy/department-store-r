@@ -1,7 +1,7 @@
-import p1_img from "./new textile.png";
-import p2_img from "'./corporate textile.png'";
-import p3_img from "./th.jpg";
-import p4_img from "./corporate textile.png";
+import p1_img from "./p1_product_i1.png";
+import p2_img from "'./p1_product_i2.png";
+import p3_img from "./p1_product_i3.png";
+import p4_img from "./p1_product_i4.png";
 import p5_img from "./product_5.png";
 import p6_img from "./product_6.png";
 import p7_img from "./product_7.png";
@@ -40,7 +40,7 @@ let all_product = [
     id: 1,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
     category: "women",
-    image: "https://3dlancer.net/upload/modelimages/67/12067/texture-linoleum-linoleum-63537-copy.jpg",
+    image: "p1_img",
     new_price: 50.0,
     old_price: 80.5,
   },
@@ -48,7 +48,7 @@ let all_product = [
     id: 2,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
     category: "women",
-    image: "https://3dlancer.net/upload/modelimages/67/12067/texture-linoleum-linoleum-63536-copy.jpg",
+    image: "p2_img",
     new_price: 85.0,
     old_price: 120.5,
   },
@@ -56,7 +56,7 @@ let all_product = [
     id: 3,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
     category: "women",
-    image: "https://3dlancer.net/upload/modelimages/67/12067/texture-linoleum-linoleum-63536-copy.jpg",
+    image: "p3_img",
     new_price: 60.0,
     old_price: 100.5,
   },
@@ -64,7 +64,7 @@ let all_product = [
     id: 4,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
     category: "women",
-    image: "https://i.pinimg.com/originals/0a/04/9a/0a049a6bb1ec7bab613c3ee372a340c2.jpg",
+    image: "p4_img",
   
     new_price: 100.0,
     old_price: 150.0,
@@ -73,7 +73,7 @@ let all_product = [
     id: 5,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
     category: "women",
-    image: "https://www.foambymail.com/blog/wp-content/uploads/memory_topper2.jpg",
+    image: "p5_img",
     
     new_price: 85.0,
     old_price: 120.5,

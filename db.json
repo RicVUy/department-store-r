@@ -42,7 +42,7 @@
       "size": "small",
       "productdesc": "PN#04/Blucorner/rn/black/S",
       "price": 12.75,
-      "inventory": 68
+      "inventory": 66
     },
     {
       "id": 5,
@@ -64,7 +64,7 @@
       "size": "large",
       "productdesc": "PN#06/Blucorner/rn/black/L",
       "price": 14.5,
-      "inventory": 2977
+      "inventory": 2976
     },
     {
       "id": 7,
@@ -97,7 +97,7 @@
       "size": "large",
       "productdesc": "PN#09/Lifeline/collar/white/L",
       "price": 20,
-      "inventory": 24
+      "inventory": 23
     },
     {
       "id": 10,
@@ -108,7 +108,7 @@
       "size": "extralarge",
       "productdesc": "PN#10/Lifeline/collar/white/XL",
       "price": 21,
-      "inventory": 44
+      "inventory": 43
     },
     {
       "category": "textiles",
@@ -129,7 +129,7 @@
       "size": "72 in width",
       "price": "89",
       "productdesc": "lenoleum/beige/89/yd",
-      "inventory": "056",
+      "inventory": 54,
       "id": 12
     },
     {
@@ -140,7 +140,7 @@
       "color": "brown",
       "size": "72 in width",
       "productdesc": "lenoleum/brown/P98/yd",
-      "inventory": "30",
+      "inventory": 27,
       "id": 13
     },
     {
@@ -184,7 +184,7 @@
       "color": "white",
       "size": "5x54x75",
       "productdesc": "UratexFoam/5x54x75/P4500",
-      "inventory": 2,
+      "inventory": 0,
       "id": 17
     },
     {
@@ -225,7 +225,7 @@
     {
       "id": 1,
       "category": "Tshirt",
-      "image": "https://i.ytimg.com/vi/GT55DrHptD0/maxresdefault.jpg"
+      "image": "https://shopping.traveltheworld.com.ua/wp-content/uploads/2015/03/Bangkok-Fashion-Outlet-2.jpg"
     },
     {
       "id": 2,
@@ -240,12 +240,12 @@
     {
       "id": 4,
       "category": "Floormat",
-      "image": "https://www.texturepalace.com/wp-content/uploads/1_textile_texture_prew_10_01_29.jpg"
+      "image": "https://3dlancer.net/upload/modelimages/67/12067/texture-linoleum-linoleum-63536-copy.jpg"
     },
     {
       "id": 5,
       "category": "Foam and Covers",
-      "image": "https://i.ytimg.com/vi/GT55DrHptD0/maxresdefault.jpg"
+      "image": "https://www.foambymail.com/blog/wp-content/uploads/memory_topper2.jpg"
     }
   ],
   "buyers": [
