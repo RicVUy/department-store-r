@@ -41,7 +41,7 @@
       "color": "black",
       "size": "small",
       "productdesc": "PN#04/Blucorner/rn/black/S",
-      "price": 12.75,
+      "price": "12.95",
       "inventory": 66
     },
     {
@@ -64,7 +64,7 @@
       "size": "large",
       "productdesc": "PN#06/Blucorner/rn/black/L",
       "price": 14.5,
-      "inventory": 2976
+      "inventory": 2975
     },
     {
       "id": 7,
@@ -140,7 +140,7 @@
       "color": "brown",
       "size": "72 in width",
       "productdesc": "lenoleum/brown/P98/yd",
-      "inventory": 27,
+      "inventory": 23,
       "id": 13
     },
     {
@@ -151,7 +151,7 @@
       "color": "green",
       "size": "80 in width",
       "productdesc": "Lenoleum/green/P120/yd",
-      "inventory": "25",
+      "inventory": 23,
       "id": 14
     },
     {
@@ -206,7 +206,7 @@
       "color": "blue",
       "size": "medium",
       "productdesc": "CheckSkirt/WhiteB/blue/P450",
-      "inventory": "6",
+      "inventory": 5,
       "id": 19
     },
     {
@@ -217,7 +217,7 @@
       "color": "white/blue",
       "size": "Small",
       "productdesc": "PoloPants/white/blueP560",
-      "inventory": "12",
+      "inventory": 11,
       "id": 20
     }
   ],
@@ -346,6 +346,86 @@
         }
       ],
       "id": 5
+    },
+    {
+      "name": "edna",
+      "username": "",
+      "email": "",
+      "password": "",
+      "cartContent": [
+        {
+          "productdesc": "",
+          "price": 0,
+          "quantity": 0
+        },
+        {
+          "totalAmount": 0,
+          "totalPlusTax": 0,
+          "delFee": 0,
+          "total": 0
+        }
+      ],
+      "id": 6
+    },
+    {
+      "name": "",
+      "username": "",
+      "email": "",
+      "password": "",
+      "cartContent": [
+        {
+          "productdesc": "",
+          "price": 0,
+          "quantity": 0
+        },
+        {
+          "totalAmount": 0,
+          "totalPlusTax": 0,
+          "delFee": 0,
+          "total": 0
+        }
+      ],
+      "id": 7
+    },
+    {
+      "name": "edna",
+      "username": "edna",
+      "email": "uyuednadiego@gmail.com",
+      "password": "mirei",
+      "cartContent": [
+        {
+          "productdesc": "",
+          "price": 0,
+          "quantity": 0
+        },
+        {
+          "totalAmount": 0,
+          "totalPlusTax": 0,
+          "delFee": 0,
+          "total": 0
+        }
+      ],
+      "id": 8
+    },
+    {
+      "name": "Ric",
+      "username": "ricky",
+      "email": "rvuy62@yahoo.com",
+      "password": "qwer",
+      "cartContent": [
+        {
+          "productdesc": "",
+          "price": 0,
+          "quantity": 0
+        },
+        {
+          "totalAmount": 0,
+          "totalPlusTax": 0,
+          "delFee": 0,
+          "total": 0
+        }
+      ],
+      "id": 9
     }
   ]
 }
